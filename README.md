@@ -123,13 +123,18 @@ We also contribute [high-quality SFT and RL datasets](https://huggingface.co/col
 
 ## 🚩 New Updates
 
-- **[2026.2]** We fully open-source our work **RLAnything**, including:
+- **[2026.2]** 🦞 We release [**OpenClaw-RL**](https://github.com/Gen-Verse/OpenClaw-RL), a new fully asynchronous RL framework built on top of Open-AgentRL, targeting **personalized agentic AI** trained from live conversation feedback. OpenClaw-RL introduces:
+  - **Binary RL (GRPO):** PRM-based scalar reward from next-state feedback for policy optimization
+  - **On-Policy Distillation (OPD):** Token-level directional learning from hindsight hints — richer than any scalar signal
+  - **Zero API keys & fully self-hosted:** conversation data never leaves your infrastructure
+
+- **[2026.2]** We fully open-source our work [**RLAnything**](https://arxiv.org/abs/2602.02488), including:
   - Training code across GUI Agent, LLM Agent, and Coding LLM settings.
   - Model checkpoints: both the policy models ([RLAnything-7B/8B](https://huggingface.co/collections/Gen-Verse/open-agentrl)) and reward models ([RLAnything-Reward-8B/14B](https://huggingface.co/collections/Gen-Verse/open-agentrl)) across these settings.
   - Evaluation Scripts for our models 
 
 
-- **[2025.10]** We fully open-source our work **DemyAgent**, including:
+- **[2025.10]** We fully open-source our work [**DemyAgent**](https://arxiv.org/abs/2510.11701), including:
   - Training code for both SFT and RL stages
   - High-quality SFT dataset (3K samples) and RL dataset (30K samples)
   - Model checkpoints: SFT models (Qwen2.5-7B-RA-SFT, Qwen3-4B-RA-SFT) and RL-trained model ([DemyAgent-4B](https://huggingface.co/Gen-Verse/DemyAgent-4B))
@@ -457,6 +462,7 @@ We further scale the optimization for GUI agent and achieves SoTA results:
 ## 🙏 Acknowledgements
 
 This work aims to explore more efficient paradigms for Agentic RL. Our implementation builds upon the excellent codebases of [VeRL](https://github.com/volcengine/verl) and [ReTool](https://github.com/ReTool-RL/ReTool). We sincerely thank these projects for their valuable insights and high-quality implementations, which have greatly facilitated our research.
+
 
 
 
